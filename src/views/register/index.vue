@@ -189,7 +189,7 @@ $cursor: #fff;
 
     .el-form-item {
         border: 1px solid rgba(255, 255, 255, 0.1);
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.35);
         border-radius: 5px;
         color: #454545;
     }
@@ -201,15 +201,16 @@ $cursor: #fff;
 
 <style lang="scss" scoped>
 $bg: #2d3a4b;
-$dark_gray: #889aa4;
-$light_gray: #eee;
+$dark_gray: #424242;
+$light_gray: #424242;
 
 .login-container {
     min-height: 100%;
     width: 100%;
-    background-color: $bg;
     overflow: hidden;
-
+    background-image: url("../../assets/login_images/login_home.png");
+    background-size: 100% 100%;
+    
     .login-form {
         position: relative;
         width: 520px;

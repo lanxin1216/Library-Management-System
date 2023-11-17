@@ -133,12 +133,15 @@ $cursor: #fff;
 
 @supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
   .login-container .el-input input {
-    color: $cursor;
+    color: $cursor;  // 在特定条件下，设置输入框文字颜色为光标颜色
   }
 }
 
 /* reset element-ui css */
+/* 重置 Element UI 样式开始 */
 .login-container {
+
+   /* 第一种输入框样式设置 */
   .el-input.yuan {
     display: inline-block;
     height: 47px;
@@ -155,8 +158,9 @@ $cursor: #fff;
       caret-color: $cursor;
 
       &:-webkit-autofill {
-        box-shadow: 0 0 0px 1000px $bg inset !important;
-        -webkit-text-fill-color: $cursor !important;
+        box-shadow: 0 0 0px 1000px $bg inset !important;  // 自动填充时的背景样式
+        -webkit-text-fill-color: $cursor !important;     // 自动填充时的文字颜色
+
       }
     }
   }
@@ -185,7 +189,7 @@ $cursor: #fff;
 
   .el-form-item {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.35);
     border-radius: 5px;
     color: #454545;
   }
@@ -194,14 +198,20 @@ $cursor: #fff;
 
 <style lang="scss" scoped>
 $bg:#2d3a4b;
-$dark_gray:#889aa4;
-$light_gray:#eee;
+$dark_gray:#424242;
+$light_gray:#424242;
 
 .login-container {
-  min-height: 100%;
+  // min-height: 100%;
+  // width: 100%;
+  // background-color: $bg;
+  // overflow: hidden;
+
   width: 100%;
-  background-color: $bg;
-  overflow: hidden;
+  height: 100%;
+  background-image: url("../../assets/login_images/login_home.png");
+  background-size: 100% 100%;
+
 
   .login-form {
     position: relative;

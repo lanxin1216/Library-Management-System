@@ -20,12 +20,12 @@
             "
             data-options="iconCls:'icon-heart',plain:true"
         >
-            <i class="el-icon-a-01" style="font-size: 32px; font-weight: 600; color: black;">
-                欢迎使用图书管理系统
+            <i class="el-icon-a-01" style="font-size: 32px; font-weight: 600; color: blue;">
+                欢迎使用哈尔滨师范大学图书管理系统！
             </i>
             <hr />
 
-            <img :src="require('@/assets/index.jpg')" style="width: 78%" />
+            <img :src="require('@/assets/index.jpg')" style="width: 100%" />
         </div>
     </div>
 </template>
